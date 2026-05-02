@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Fouzal-Azeem</title>
+  <meta name="description" content="Digital marketing services: SEO, Amazon PPC, Shopify, Etsy & eBay VA, Meta Ads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">My <span class="gradient-text">Services</span></h1>
+      <p class="section-sub">Pick what fits your business — or combine for a full growth package.</p>
+
+      <!-- ============ SERVICE CARDS (edit title, desc, link) ============ -->
+      <div class="grid-3">
+
+        <div class="glass">
+          <div class="card-icon">🔍</div>
+          <h3 class="card-title">SEO Optimization</h3>
+          <p class="card-desc">Keyword research, on-page SEO, technical audits, link building and content strategy that ranks long-term.</p>
+          <a href="booking.html" class="btn btn-primary">Book This</a>
+        </div>
+
+        <div class="glass">
+          <div class="card-icon">📦</div>
+          <h3 class="card-title">Amazon PPC</h3>
+          <p class="card-desc">Sponsored Products, Brands and Display campaigns optimized for ACoS, ROAS and ranking velocity.</p>
+          <a href="booking.html" class="btn btn-primary">Book This</a>
+        </div>
+
+        <div class="glass">
+          <div class="card-icon">🛍️</div>
+          <h3 class="card-title">Etsy & eBay VA</h3>
+          <p class="card-desc">Listing creation, SEO tags, order management, customer service and store growth strategy.</p>
+          <a href="booking.html" class="btn btn-primary">Book This</a>
+        </div>
+
+        <div class="glass">
+          <div class="card-icon">🛒</div>
+          <h3 class="card-title">Shopify Store Management</h3>
+          <p class="card-desc">Full store setup, theme customization, product uploads, app integration and conversion optimization.</p>
+          <a href="booking.html" class="btn btn-primary">Book This</a>
+        </div>
+
+        <div class="glass">
+          <div class="card-icon">📣</div>
+          <h3 class="card-title">Meta Ads Campaigns</h3>
+          <p class="card-desc">Facebook & Instagram ads — creative strategy, audience targeting, retargeting and scaling profitable campaigns.</p>
+          <a href="booking.html" class="btn btn-primary">Book This</a>
+        </div>
+
+        <div class="glass cert-card">
+          <div class="card-icon" style="margin:0 auto 16px;">💎</div>
+          <h3 class="card-title">Custom Package</h3>
+          <p class="card-desc">Need a tailored mix of services? Let's chat and design a plan around your goals and budget.</p>
+          <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>

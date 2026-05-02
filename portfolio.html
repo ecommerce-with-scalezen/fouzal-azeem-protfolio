@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Fouzal-Azeem</title>
+  <meta name="description" content="Selected projects and case studies by Fouzal-Azeem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">Selected <span class="gradient-text">Projects</span></h1>
+      <p class="section-sub">A snapshot of recent work across SEO, Amazon and Shopify.</p>
+
+      <!-- ============ PROJECT CARDS — duplicate a card to add more ============ -->
+      <div class="grid-3">
+
+        <div class="glass project-card">
+          <!-- Replace image: images/project1.jpg -->
+          <img src="images/project1.jpg" alt="Project 1"
+               onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">SEO for SaaS Startup</h3>
+          <p class="card-desc">Grew organic traffic by 312% in 6 months through technical SEO and content clusters.</p>
+        </div>
+
+        <div class="glass project-card">
+          <img src="images/project2.jpg" alt="Project 2"
+               onerror="this.src='https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">Amazon PPC Scale</h3>
+          <p class="card-desc">Reduced ACoS from 42% to 18% while doubling monthly revenue for a home goods brand.</p>
+        </div>
+
+        <div class="glass project-card">
+          <img src="images/project3.jpg" alt="Project 3"
+               onerror="this.src='https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">Shopify Store Launch</h3>
+          <p class="card-desc">Designed and launched a Shopify store hitting $20k in the first 60 days.</p>
+        </div>
+
+        <div class="glass project-card">
+          <img src="images/project4.jpg" alt="Project 4"
+               onerror="this.src='https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">Etsy Shop Growth</h3>
+          <p class="card-desc">Optimized 80+ listings, increasing organic Etsy traffic by 4x in 90 days.</p>
+        </div>
+
+        <div class="glass project-card">
+          <img src="images/project5.jpg" alt="Project 5"
+               onerror="this.src='https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">Meta Ads Funnel</h3>
+          <p class="card-desc">Built a full-funnel Meta Ads strategy generating 5.2x ROAS for a fashion brand.</p>
+        </div>
+
+        <div class="glass project-card">
+          <img src="images/project6.jpg" alt="Project 6"
+               onerror="this.src='https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=800&q=80&auto=format&fit=crop';" />
+          <h3 class="card-title">eBay VA Operations</h3>
+          <p class="card-desc">Managed daily operations for a high-volume eBay store with 99% positive feedback.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>

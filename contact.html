@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Fouzal-Azeem</title>
+  <meta name="description" content="Get in touch with Fouzal-Azeem for digital marketing, SEO and e-commerce projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">Let's <span class="gradient-text">Connect</span></h1>
+      <p class="section-sub">Tell me about your project — I usually reply within 24 hours.</p>
+
+      <div class="contact-grid">
+        <!-- LEFT: contact details -->
+        <div class="glass">
+          <h3 class="card-title" style="margin-bottom:18px;">Reach Me Directly</h3>
+
+          <a class="contact-item" href="tel:+923229641245">
+            <div class="ic">📞</div>
+            <div>
+              <small>Phone / WhatsApp</small>
+              +92-322-9641245
+            </div>
+          </a>
+
+          <a class="contact-item" href="mailto:fouzalazeemwork@gmail.com">
+            <div class="ic">✉️</div>
+            <div>
+              <small>Email</small>
+              fouzalazeemwork@gmail.com
+            </div>
+          </a>
+
+          <!-- EDIT Fiverr URL -->
+          <a class="contact-item" href="https://www.fiverr.com/" target="_blank" rel="noopener"
+             style="border-color:rgba(29,191,115,0.5);background:linear-gradient(135deg,rgba(29,191,115,0.15),rgba(29,191,115,0.05));">
+            <div class="ic" style="background:linear-gradient(135deg,#1dbf73,#18a865);">🟢</div>
+            <div>
+              <small>Hire on Fiverr</small>
+              View My Fiverr Profile →
+            </div>
+          </a>
+
+          <h4 class="card-title" style="margin-top:24px;font-size:1rem;">Follow Me</h4>
+          <!-- EDIT social links — leave # to add later -->
+          <div class="socials">
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: contact form (mailto, no backend) -->
+        <form id="contact-form" class="glass">
+          <h3 class="card-title" style="margin-bottom:18px;">Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message →</button>
+          <p style="margin-top:12px;color:var(--text-muted);font-size:0.85rem;">
+            This will open your email app with the message ready to send.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>

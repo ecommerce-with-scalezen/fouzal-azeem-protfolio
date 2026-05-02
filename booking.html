@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Call | Fouzal-Azeem</title>
+  <meta name="description" content="Book a free consultation with Fouzal-Azeem for SEO, Amazon, Shopify or Meta Ads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container" style="max-width:720px;">
+      <h1 class="section-title">Book a <span class="gradient-text">Free Call</span></h1>
+      <p class="section-sub">Fill the form and I'll get back with available slots.</p>
+
+      <form id="booking-form" class="glass">
+        <div class="form-group">
+          <label for="b-name">Full Name</label>
+          <input type="text" id="b-name" name="name" required placeholder="John Doe" />
+        </div>
+        <div class="grid-2" style="gap:16px;">
+          <div class="form-group">
+            <label for="b-email">Email</label>
+            <input type="email" id="b-email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="b-phone">Phone</label>
+            <input type="tel" id="b-phone" name="phone" placeholder="+92 300 0000000" />
+          </div>
+        </div>
+        <div class="grid-2" style="gap:16px;">
+          <div class="form-group">
+            <label for="b-service">Service</label>
+            <select id="b-service" name="service" required>
+              <option value="">Select a service</option>
+              <option>SEO Optimization</option>
+              <option>Amazon PPC</option>
+              <option>Etsy & eBay VA</option>
+              <option>Shopify Store Management</option>
+              <option>Meta Ads Campaigns</option>
+              <option>Custom Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="b-date">Preferred Date</label>
+            <input type="date" id="b-date" name="date" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="b-message">Project Details</label>
+          <textarea id="b-message" name="message" placeholder="Briefly describe your goals..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Request Booking →</button>
+
+        <!-- Confirmation message after submit -->
+        <p id="booking-success" style="display:none;margin-top:14px;padding:12px;border-radius:12px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:#86efac;text-align:center;">
+          ✅ Thanks! Your booking request is opening in your email app.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>

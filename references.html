@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References | Fouzal-Azeem</title>
+  <meta name="description" content="References and testimonials from clients and collaborators." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">My <span class="gradient-text">References</span></h1>
+      <p class="section-sub">Testimonials and recommendations from industry specialists.</p>
+
+      <!-- ============ REFERENCES CARDS — Add testimonials here ============ -->
+      <div class="grid-2">
+
+        <article class="glass blog-card">
+          <p class="meta">Industry Specialist</p>
+          <h3 class="card-title">Professor Faiza Latif</h3>
+          <p class="card-desc">Lecturer, Hailey College of Commerce, Punjab University</p>
+          <div class="blog-content">
+            <p>Faiza Latif is a respected lecturer at Hailey College of Commerce, Punjab University. Her expertise in commerce and education makes her a valuable reference in the academic community.</p>
+            <div class="contact-grid" style="margin-top: 20px; gap: 12px; grid-template-columns: 1fr;">
+              <a class="contact-item" href="mailto:faizalatif.instructor@gmail.com">
+                <span class="ic">✉️</span>
+                <div>
+                  <strong>Email Faiza</strong>
+                  <small>faizalatif.instructor@gmail.com</small>
+                </div>
+              </a>
+              <a class="contact-item" href="tel:03226498952">
+                <span class="ic">📞</span>
+                <div>
+                  <strong>Call Faiza</strong>
+                  <small>0322-6498952</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass blog-card">
+          <p class="meta">Industry Specialist</p>
+          <h3 class="card-title">Shahab Ud Din Ghori</h3>
+          <p class="card-desc">CEO, Micro Tech Sulations</p>
+          <div class="blog-content">
+            <p>Shahab Ud Din Ghori is the CEO of Micro Tech Sulations. His recommendation highlights strong leadership, business vision, and trust in professional collaboration.</p>
+            <div class="contact-grid" style="margin-top: 20px; gap: 12px; grid-template-columns: 1fr;">
+              <a class="contact-item" href="mailto:shahab4112@gmail.com">
+                <span class="ic">✉️</span>
+                <div>
+                  <strong>Email Shahab</strong>
+                  <small>shahab4112@gmail.com</small>
+                </div>
+              </a>
+              <a class="contact-item" href="tel:+923064326341">
+                <span class="ic">📞</span>
+                <div>
+                  <strong>Call Shahab</strong>
+                  <small>+92 306 4326341</small>
+                </div>
+              </a>
+              <a class="contact-item" href="https://www.shahabspeaks.com" target="_blank" rel="noopener">
+                <span class="ic">🌐</span>
+                <div>
+                  <strong>Visit Website</strong>
+                  <small>www.shahabspeaks.com</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more testimonials here -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>

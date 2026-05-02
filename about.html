@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Fouzal-Azeem</title>
+  <meta name="description" content="About Fouzal-Azeem — background, education and career as a digital marketing expert." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Fouzal-Azeem</a>
+      <button class="burger" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Book</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">About <span class="gradient-text">Me</span></h1>
+      <p class="section-sub">Get to know the person behind the strategy.</p>
+
+      <div class="grid-2" style="align-items:start;">
+        <!-- LEFT: Intro -->
+        <div class="glass fade-up">
+          <h3 class="card-title">Who I Am</h3>
+          <!-- EDIT bio paragraphs -->
+          <p class="card-desc">
+            I'm <strong>Fouzal-Azeem</strong> — a Digital Marketing, SEO and
+            E-commerce specialist with hands-on experience helping small
+            businesses and global brands scale online. My focus is on clear
+            strategy, transparent reporting, and results that move revenue.
+          </p>
+          <p class="card-desc">
+            I work across SEO, Amazon PPC, Meta Ads, Shopify, Etsy and eBay —
+            covering the full funnel from discovery to conversion.
+          </p>
+        </div>
+
+        <!-- RIGHT: Image -->
+        <div class="glass fade-up delay-2" style="padding:0;overflow:hidden;">
+          <!-- Replace this image with your own -->
+          <img src="images/about.jpg" alt="About Fouzal-Azeem"
+               style="width:100%;height:100%;min-height:300px;object-fit:cover;display:block;"
+               onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80&auto=format&fit=crop';" />
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <h2 class="section-title" style="margin-top:80px;">Education</h2>
+      <div class="grid-2">
+        <div class="glass">
+          <div class="card-icon">🎓</div>
+          <h3 class="card-title">Bachelor's Degree</h3>
+          <p class="card-desc">Your University Name — 2019 to 2023. Field of study and a short note.</p>
+        </div>
+        <div class="glass">
+          <div class="card-icon">📚</div>
+          <h3 class="card-title">Higher Secondary</h3>
+          <p class="card-desc">School / College name — pre-engineering / commerce. Year of completion.</p>
+        </div>
+      </div>
+
+      <!-- CAREER -->
+      <h2 class="section-title" style="margin-top:80px;">Career Summary</h2>
+      <div class="grid-3">
+        <div class="glass">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">Freelance Specialist</h3>
+          <p class="card-desc">2022 – Present · Helping brands grow on Fiverr, Upwork and direct clients.</p>
+        </div>
+        <div class="glass">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">E-commerce VA</h3>
+          <p class="card-desc">Managed Etsy, eBay and Amazon stores — listings, ads, customer support.</p>
+        </div>
+        <div class="glass">
+          <div class="card-icon">📈</div>
+          <h3 class="card-title">SEO Consultant</h3>
+          <p class="card-desc">Built ranking strategies for blogs, agencies, and local businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="https://www.fiverr.com/" target="_blank" rel="noopener" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>© <span id="year"></span> Fouzal-Azeem.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923229641245" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
